@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScritpt</title>
+    <h1>Primeira Parte</h1>
+</head>
+<body>
+    <script>
+        //Código JavaScript
+        //console.log("Hello Word")
+        //sem tipagem estatica, não precisa definir qual tipo da variavel
+        //tipagem dinamica
+        //obejtos = variaveis que guardam mais de um valor
+        // var nome =" Karina"
+        // var idade = 20;
+        // var peso= 59;
+        // var humano = true;
 
-    <title>Minha Pagina</title>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="js/main.js"></script>
- </head>
- <body>
- <!-- <script>
-     alert("meu primeiro JS");
- </script>
- aparece um alerta com a mensagem de cima  -->
 
- <button type="button" onclick="clikou()">clique aqui</button>
- <p id= "agradecimento" onclick="redirecionar()"></p>
- <p id= "mousemove" onmouseover="trocar()">passe o mouse aq</p>
- </body> 
+        // var alunos = ['Karina', 'Gabriel', 'Lucas'];//vetor
+
+        // var aluno = {
+        //     nome: "Karina",
+        //     idade: 20,
+        //     peso: 59,
+        //     humano: true
+        //     //objeto
+        // };
+        // console.log(alunos[1]);
+        // // se eu quiser saber a informação de um aluno
+        // console.log(aluno.peso);
+        // var  x = 10, y = 5;
+        // resultado = x+y;
+        // console.log(resultado);
+
+        // function soma(numero1, numero2){
+        //   var resultado = numero1 + numero2;
+        //   // a variavel resultado, so é visivel dentro 
+        //   //do seu escopo
+        //  return resultado;
+        // }
+        //  var resultado = soma(1,2);
+        //  //preciso defini-la novamente, para que apareça o resutado
+
+        //  console.log(resultado);
+        // function retornaSexo(sexo) {
+        //     //M, F
+        //     // Masculino, Feminino
+        //     if(sexo === 'M'){
+        //         return 'Masculino';
+
+        //     }else{
+        //         return 'Feminino'
+        //     }
+        // }
+
+        // var resultado = retornaSexo('M');
+        // console.log(resultado);
+
+
+        //AND OR NOT
+        // var sexo = 'M', idade = 20;
+
+        // if(sexo ==='M' && idade>=18){
+        //     console.log('OK')
+        // }
+
+        // Exercício 1
+        // var endereço = {
+        //     rua:"Rua dos Pinheiros",
+        //     numero:1293,
+        //     bairro: "Centro",
+        //     cidade:"São Paulo",
+        //     uf:"SP"
+        // };
+        // const {rua, numero, bairro, cidade, uf} =  endereço;
+        // console.log(`O usuario mora em ${cidade} / ${uf}, no bairro ${bairro}, na ${rua} com n° ${numero}.`);
+
+        // Exercicio 2 
+        const pares = (x,y) => {
+            for(i=x; i<=y; i++){
+                    if( i % 2==0){
+                        console.log(i);
+                    }
+            }
+        };
+        pares(32, 321)
+    </script>
+</body>
 </html>
